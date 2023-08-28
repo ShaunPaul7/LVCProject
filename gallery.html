@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Virtual Classes - Web Stacks</title>
+<style>
+   body {
+     font-family: Arial, sans-serif;
+     margin: 0;
+     padding: 0;
+   }
+   header {
+     background-color: black;
+     background-image: url(./images/VR.jpg);
+     color: #fff;
+     text-align: center;
+     padding: 10px;
+   }
+   nav {
+     background-color: skyblue;
+     text-align: center;
+     padding: 10px;
+   }
+   nav a {
+     color: black;
+     text-decoration: none;
+     margin: 0 10px;
+   }
+   .container {
+     max-width: 800px;
+     margin: 0 auto;
+     padding: 20px;
+   }
+   footer {
+  text-align: center;
+  padding: 3px;
+  background-color: slateblue;
+  color: white;
+}
+div
+{
+width:300px;
+height:100px;
+background-color:yellow;
+box-shadow: 10px 10px 5px #888888;
+}
+table td{
+    padding: 10px;
+    text-align: center;
+}
+img.complete-sepia {
+    filter: sepia(100%);
+}
+img.partial-sepia {
+    filter: sepia(30%);
+}
+img.transparent {
+    filter: opacity(80%);
+}
+img.highly-transparent {
+    filter: opacity(20%);
+}
+img.shadow {
+    filter: drop-shadow(4px 4px 4px red);
+}
+img.shadow-large {
+    filter: drop-shadow(4px 4px 10px orange);
+}
+p {
+	
+    column-count: 3;
+   column-gap: 100px;
+   column-rule: 20px solid green;
+}
+img.extra-blur {
+    filter: blur(5px); 
+}
+
+.test {
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition: width 2s;
+    margin-left: auto;
+    margin-right: auto;
+}
+div:hover {
+    width: 300px;
+}
+</style>
+</head>
+<body>
+
+    
+<header>
+<canvas id="myCanvas" width="300" height="100" style="border:15px solid #000000;">
+  </canvas>
+<script>
+  var c=document.getElementById("myCanvas");
+  var ctx=c.getContext("2d");
+  ctx.font="30px Arial";
+  ctx.strokeText("Live Virtual Classes",20,70);
+  
+  </script>
+
+</header>
+<nav>
+<a href="index.html">Home</a>
+<a href="allcourses.html">All courses</a>
+<a href="registration.html">Registration</a>
+<a href="gallery.html">Gallery</a>
+<a href="lvcresult.html">LVC Result</a>
+<a href="contact.html">Contact us</a>
+<a href="subscription.html">Subscription</a>
+</nav>
+
+    <table style="margin-left: auto; margin-right: auto;">
+        <tr>
+            <td>
+                <img src="images/mean-stack.png" width=300 height=200>
+            </td>
+             <td>
+                <img class="partial-sepia" src="images/mean-stack.png" width=300 height=200>
+            </td>
+            <td>
+                <img class="complete-sepia" src="images/mean-stack.png" width=300 height=200>
+            </td>
+        </tr>
+        <tr>
+            <td>Original Image</td>
+            <td>Sepia(30%)</td> 
+            <td>Sepia(100%)</td>
+        </tr>
+    </table>
+
+    <table style="margin-left: auto; margin-right: auto;">
+        <tr>
+            <td>
+                <img src="images/MernStack.PNG" width=300 height=200>
+            </td>
+             <td>
+                <img class="transparent" src="images/MernStack.PNG" width=300 height=200>
+            </td>
+            <td>
+                <img class="highly-transparent" src="images/MernStack.PNG" width=300 height=200>
+            </td>
+        </tr>
+        <tr>
+            <td>Original Image</td>
+            <td>Opacity(80%)</td> 
+            <td>Opacity(30%)</td>
+        </tr>
+    </table>
+
+    <table style="margin-left: auto; margin-right: auto;">
+        <tr>
+            <td>
+                <img src="images/MevnStack.jpg" width=300 height=200>
+            </td>
+             <td>
+                <img class="shadow" src="images/MevnStack.jpg"  width=300 height=200>
+            </td>
+            <td>
+                <img class="shadow-large" src="images/MevnStack.jpg" width=300 height=200>
+            </td>
+        </tr>
+    </tr>
+        <td>Original Image</td>
+            <td>Shadow</td> 
+            <td>Large Shadow</td>
+        </tr>
+    </table>
+    
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut bibendum nisi egestas suscipit gravida. Sed velit nisl, tristique sed dui mollis, porta tempus ligula. Phasellus vel orci vel arcu pellentesque fermentum. Duis bibendum metus arcu. Aliquam eget tortor vulputate, sollicitudin felis a, mollis libero. Aliquam vitae consequat sapien, id blandit lectus. Integer ac nibh ac nulla tincidunt accumsan sit amet sit amet risus. Integer id nisl urna. In a enim elementum, auctor justo quis, tincidunt augue. Donec nibh dui, congue non neque quis, semper aliquam felis. Praesent efficitur massa vel convallis euismod. Quisque metus lectus, consectetur sit amet justo in, venenatis faucibus nunc. Aenean faucibus, enim id egestas convallis, felis magna mattis est, in ultricies est urna ac nisl.
+    
+        Cras placerat quis tortor quis molestie. Nullam imperdiet gravida velit eget sollicitudin. Nunc dictum pretium justo vel congue. Praesent auctor leo maximus leo aliquam, eget vehicula tortor tincidunt. Vestibulum finibus venenatis dui, nec lobortis mauris convallis id. Maecenas porttitor erat tellus, at vulputate eros euismod a. In aliquam, dolor et bibendum consequat, eros felis ultricies lorem, ac fermentum arcu metus in magna. Integer auctor sapien a massa porta, et suscipit sapien sollicitudin. Maecenas vel hendrerit nibh. Curabitur convallis interdum ornare. Curabitur justo nibh, pretium ac convallis vitae, consectetur sit amet orci. Nunc non enim non ligula efficitur venenatis et at metus. Duis turpis velit, lacinia interdum purus ac, venenatis semper lacus. Aenean mattis fermentum odio ut suscipit.
+        
+        Vestibulum vehicula lobortis diam et pretium. Duis in aliquet tellus. Phasellus tincidunt odio id faucibus malesuada. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer euismod porta nibh sit amet efficitur. Phasellus blandit porta vulputate. Proin placerat efficitur cursus. Fusce blandit tristique urna quis mollis. Duis erat lectus, gravida nec tellus eu, cursus laoreet augue. Maecenas in nisi mauris. In vitae justo posuere, tincidunt neque a, ultrices dui. Sed id bibendum metus. Vestibulum at tincidunt felis, in efficitur libero.
+        
+        Mauris bibendum risus non condimentum gravida. Praesent sed dictum augue, sit amet sollicitudin massa. Curabitur sed hendrerit nisi. Nulla eget lacinia tortor, id sollicitudin risus. In hac habitasse platea dictumst. Mauris lorem dui, venenatis et massa eget, pretium auctor risus. Nulla congue bibendum hendrerit. Phasellus nec lorem in ipsum facilisis scelerisque. Duis quis massa metus. Pellentesque commodo metus non bibendum aliquet. Duis pellentesque tempus posuere. Mauris interdum lobortis massa vel sodales.
+        
+        Curabitur feugiat, magna quis ultricies dignissim, felis leo varius nulla, ut blandit arcu libero quis urna. Morbi sollicitudin odio purus, ut elementum mauris feugiat sit amet. Fusce placerat scelerisque turpis. Aliquam erat volutpat. Vestibulum blandit vitae erat a sodales. Integer semper tristique risus eget lobortis. Aliquam luctus sed justo vel auctor. Nunc sit amet nulla eu est fringilla euismod sed ac orci. Sed massa lorem, blandit sed massa quis, condimentum ornare purus.</p>
+
+        <table style="margin-left: auto; margin-right: auto;">
+            <tr>
+                <td>
+                    <img class="extra-blur" src="images/VR.jpg" width=300 height=200>
+                    <p><center>Blur effect</center></p>
+                </td>
+            </tr>
+        </table>
+
+
+<div class=test></div>
+
+<p><center>Hover over the div element above, to see the transition effect.</center></p>
+        </section>
+
+</div>
+</body>
+<footer>
+  <p>Designed and developed by Shaun</p>
+</footer>
+</html>

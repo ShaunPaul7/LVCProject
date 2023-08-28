@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Virtual Classes - Web Stacks</title>
+<script src="./valid.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+<style>
+   body {
+     font-family: Arial, sans-serif;
+     margin: 0;
+     padding: 0;
+   }
+   header {
+     background-color: black;
+     background-image: url(./images/VR.jpg);
+     color: #fff;
+     text-align: center;
+     padding: 10px;
+   }
+   nav {
+     background-color: skyblue;
+     text-align: center;
+     padding: 10px;
+   }
+   nav a {
+     color: black;
+     text-decoration: none;
+     margin: 0 10px;
+   }
+   .container {
+     max-width: 800px;
+     margin: 0 auto;
+     padding: 20px;
+   }
+   footer {
+  text-align: center;
+  padding: 3px;
+  background-color: slateblue;
+  color: white;
+}
+</style>
+</head>
+<body onload="jfun4()">
+
+    
+<header>
+<canvas id="myCanvas" width="300" height="100" style="border:15px solid #000000;">
+  </canvas>
+ 
+<script>
+  var c=document.getElementById("myCanvas");
+  var ctx=c.getContext("2d");
+  ctx.font="30px Arial";
+  ctx.strokeText("Live Virtual Classes",20,70);
+  </script>
+ 
+
+</header>
+<nav>
+<a href="index.html">Home</a>
+<a href="allcourses.html">All courses</a>
+<a href="registration.html">Registration</a>
+<a href="gallery.html">Gallery</a>
+<a href="lvcresult.html">LVC Result</a>
+<a href="contact.html">Contact us</a>
+<a href="MCQ.html">MCQ</a>
+<a href="subscription.html">Subscription</a>
+</nav>
+<div class="container">
+<section id="mean">
+<h2>MEAN Stack</h2>
+<p>The MEAN stack is a JavaScript-based framework for developing web applications. MEAN is named after MongoDB, Express, Angular, and Node, the four key technologies that make up the layers of the stack.</p>
+</section>
+<section id="mern">
+<h2>MERN Stack</h2>
+<p>MERN stands for MongoDB, Express, React, Node, after the four key technologies that make up the stack. Express and Node make up the middle tier. Express.js is a server-side web framework, and Node.js is the popular and powerful JavaScript server platform.</p>
+</section>
+<section id="mevn">
+<h2>MEVN Stack</h2>
+<p>The MEVN Stack is quickly becoming an increasingly popular web development stack among developers. It is a collection of technologies that allow developers to quickly and easily build web applications. MEVN stands for MongoDB, Express, Vue.js, and Node.js, which are four of the most popular open-source JavaScript technologies used today.</p>
+<center>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/YVNqFcdDvFU?si=jFkNnmyrq1DBIvTC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen ></iframe>
+</center>
+  
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/MeanStack.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="images/MernStack.PNG" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="images/MevnStack.jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+   
+    
+  </section>
+</div>
+</body>
+<footer>
+  <p>Designed and developed by Shaun</p>
+</footer>
+</html>

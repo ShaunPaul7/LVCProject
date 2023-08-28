@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UI Development MCQ</title>
+
+<style>
+    body {
+     font-family: Arial, sans-serif;
+     margin: 0;
+     padding: 0;
+   }
+   header {
+     background-color: skyblue;
+     background-image: url(./images/VR.jpg);
+     color: #fff;
+     text-align: center;
+     padding: 10px;
+   }
+   nav {
+     background-color: skyblue;
+     text-align: center;
+     padding: 10px;
+   }
+   nav a {
+     color: black;
+     text-decoration: none;
+     margin: 0 10px;
+   }
+   .container {
+     max-width: 800px;
+     margin: 0 auto;
+     padding: 20px;
+   }
+   footer {
+  text-align: center;
+  padding: 3px;
+  background-color: slateblue;
+  color: white;
+   }
+  body {
+    font-family: Arial, sans-serif;
+  }
+
+  .question {
+    margin-bottom: 10px;
+  }
+
+  .options {
+    margin-left: 20px;
+  }
+</style>
+
+<script>
+    function jfun1()
+    {
+        if(frm1.r1[1].checked==true)
+        {
+            q1m=2
+        }
+        else 
+        {
+            q1m=0
+        }
+
+        if(frm1.r2[1].checked==true)
+        {
+            q2m=2
+        }
+        else 
+        {
+            q2m=0
+        }
+
+        fmarks=q1m+q2m;
+        alert ("You Got Marks:" +fmarks)
+
+
+    }</script>
+
+</head>
+<header>
+
+    <h1 style="color:black;">Live Virtual Classes</h1>
+    <p style="color:black;">Learn the most popular web stacks online!</p>
+  </header>
+  <nav>
+  <a href="index.html">Home</a>
+  <a href="allcourses.html">All courses</a>
+  <a href="registration.html">Registration</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="lvcresult.html">LVC Result</a>
+  <a href="contact.html">Contact us</a>
+  <a href="subscription.html">Subscription</a>
+  </nav>
+
+<body>
+
+  <h1>UI Development MCQ</h1>
+
+  <form name="frm1">
+    <h2> 2 Marks Each</h2>
+<div>
+<pre>
+Q1. HTML is used for creating 
+Dynamic Page                    <input type="radio" name="r1">
+Static  Page                    <input type="radio" name="r1">
+Single Page Application         <input type="radio" name="r1">
+
+
+Q2. JS is used for creating 
+Static Page                     <input type="radio" name="r2">
+Dynamic  Page                   <input type="radio" name="r2">
+Single Page ApplicationNone     <input type="radio" name="r2">
+
+</pre>
+</div>
+
+<input type="button" value="Result" onclick="jfun1()">
+</form>
+  
+</body>
+<br>
+<footer>
+    
+    <p>Designed and developed by Shaun</p>
+  </footer>
+
+</html>
